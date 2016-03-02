@@ -3,16 +3,16 @@
 Introduction
 ------------
 
-ADSHLI implements a python client for the Beckhoff Twincat AMS/ADS protocoll. It provides two APIs. The first is a low level API allowing you to directly send ADS commands to the PLC (see protocol.py). The second  (see hli.py) provides convenience funtions to make access to the PLC in an fast and easy way and without having to care about the underlying protocoll.
+ADSHLI implements a Python client for the Beckhoff TwinCAT AMS/ADS protocol. It provides two APIs. The first is a low level API allowing you to directly send ADS commands to the PLC (see protocol.py). The second  (see hli.py) provides convenience functions to make access to the PLC in an fast and easy way and without having to care about the underlying protocol.
 
 Limitations
 -----------
 
 ADSHLI uses TCP/IP to connect to the Twincat AMS/ADS router. Beckhoff currently limits (for whatever reason) the number of available AMS/ADS routes via TCP/IP to one per IP address. If you need more than one connection there are two possibilities to overcome the issue:
 
-1. If you are on Windows, you may use another library using a transport protocol not subjected to the abovementioned limitation. Pyads seems to be a good option for python here.
+1. If you are on Windows, you may use another library using a transport protocol not subjected to the above-mentioned limitation. Pyads seems to be a good option for Python here.
 
-2. You put a second, unlimited ads router that does ADS network address translation (NAT) in front of the crippled Beckhoff router. I've implemented something like that in adsnat2.py. Note that it is currently limited to one AMS/ADS port per IP, but you can easily change that.
+2. You put a second, unlimited ADS router that does ADS network address translation (NAT) in front of the crippled Beckhoff router. I've implemented something like that in adsnat2.py. Note that it is currently limited to one AMS/ADS port per IP, but you can easily change that.
 
 Usage
 -----
@@ -22,7 +22,8 @@ See "sample_code.py" for an example on how to use the library.
 Installation
 ------------
 
-Run python setup.py install
+Run 
+	python setup.py install
 
 Notes
 -----
