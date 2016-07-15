@@ -15,16 +15,19 @@ pc_ams_id="141.33.59.7.1.1"
 pc_ams_port=801
 timeout=5
 #var_name='Main.b_DomeOpen'
-var_name='GVL.AnalogInput1'
-var_type='u'
+var_name='GVL.temperature'
+var_type='f'
 """
 var_type='?' ... BOOL
 var_type='b' ... signed BYTE
 'c' ... CHAR ?
-'h' ... INT?
+'h' ... INT
 'p'
 's'... STRING
 'x' ... ?
+'f' ... real
+'i' ...
+'l' ...
 1...0
 
 
@@ -32,7 +35,7 @@ var_type='b' ... signed BYTE
 #var_fail_n=' Main.I_b_SafeState'
 #var_fail_t='?'
 
-var_name1='GVL.fb_Gripper.fb_Sen_Mass.Var_real_pysical_Value'
+var_name1='GVL.temperature'
 var_type1='f'
 
 var_name_array='GVL.fb_maps.Height'
